@@ -1,0 +1,11 @@
+.box-shadow{
+    background-color: #0000b3;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.box-shadow a:hover {
+    background-color: white;
+    color: white;
+  }
+

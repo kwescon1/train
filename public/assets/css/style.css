@@ -1,0 +1,10 @@
+body{
+    background-color: #fff8dc;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-transform:capitalize; */
+}
+
+h3, h4, th {
+    color: #5b72e2;
+    font-weight: bold;
+}
