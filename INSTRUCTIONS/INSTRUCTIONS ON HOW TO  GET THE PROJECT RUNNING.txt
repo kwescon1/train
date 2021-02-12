@@ -1,0 +1,44 @@
+INSTRUCTIONS ON GETTING THE APP UP AND RUNNING
+
+Step 1
+Make sure the following applications are installed on your local machine..
+XAMPP, Composer
+
+after installation open xampp and start apache server and mysql server
+
+Step 2
+Open command prompt and cd into the project's directory
+
+Step 3
+Run the command below:
+"composer update --ignore-platform-reqs"
+
+
+Step 4
+create a fresh database in your mysql by entering localhost in the browser and click on phpmyadmin link
+
+Step 5
+check the project's directory for a ".env" file. If there's no .env file, create one and copy the contents of the ".env.example" file into the .env file
+
+Step 6
+In the .env file, set these as follows:
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE= "your newly created database name"
+DB_USERNAME=root
+DB_PASSWORD=
+
+
+Step 7
+Run this commands in order:
+"php artisan cache:clear"
+"php artisan key:generate"
+"php artisan config:cache"
+"php artisan migrate"
+"php artisan serve"
+
+Step 8
+Open your browser and enter the followign url:
+"localhost:8000"
